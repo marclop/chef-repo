@@ -19,3 +19,7 @@
 include_recipe "chef-client"
 include_recpie "apt"
 include_recipe "ntp"
+
+package "ruby" do
+  action :install
+end
