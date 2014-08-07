@@ -1,0 +1,26 @@
+DEPENDENCIES
+  my_cookbook
+    path: .
+    metadata: true
+
+GRAPH
+  apache2 (2.0.0)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  apt (2.4.0)
+  build-essential (2.0.4)
+  chef-client (3.6.0)
+    cron (>= 1.2.0)
+    logrotate (>= 1.2.0)
+  cron (1.4.0)
+  iptables (0.13.2)
+  logrotate (1.6.0)
+  my_cookbook (0.1.0)
+    apache2 (>= 1.0.4)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    chef-client (>= 0.0.0)
+    ntp (>= 0.0.0)
+  ntp (1.6.4)
+  pacman (1.1.1)
