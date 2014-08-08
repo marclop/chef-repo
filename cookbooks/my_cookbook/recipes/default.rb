@@ -17,9 +17,25 @@
 # limitations under the License.
 #
 include_recipe "chef-client"
-include_recpie "apt"
-include_recipe "ntp"
+include_recipe "apt"
+#include_recipe "ntp"
 
 package "ruby" do
   action :install
 end
+
+template "/tmp/message" do
+  source "message.erb"
+  owner "root"
+  group "root"
+  mode "0644"
+  variables(
+    hi: 'hallo',
+    world: 'welt',
+    from: node['fqdn']
+  )
+end
+
+
+message = node['my_cookbook']['message']
+Chef::Log.info("** Saying what I was told to say: #{message}")
