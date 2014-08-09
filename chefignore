@@ -9,3 +9,6 @@
 
 # subversion
 */.svn/*
+
+*.vagrant/*
+*.ps1

@@ -25,8 +25,8 @@ include_recipe "ntp"
 timezone = data_bag_item('misc', 'node')
 
 ## Create a symbolic link pointing to the actual timezone
-link "/usr/share/zoneinfo/#{timezone['timezone']}" do
-  to "/etc/timezone"
+link "/etc/timezone" do
+  to "/usr/share/zoneinfo/#{timezone['timezone']}"
 end
 
 # PACKAGES
