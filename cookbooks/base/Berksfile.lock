@@ -1,0 +1,19 @@
+DEPENDENCIES
+  base
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.4.0)
+  base (0.1.0)
+    apt (>= 0.0.0)
+    chef-client (>= 0.0.0)
+    ntp (>= 0.0.0)
+    yum (>= 0.0.0)
+  chef-client (3.6.0)
+    cron (>= 1.2.0)
+    logrotate (>= 1.2.0)
+  cron (1.4.0)
+  logrotate (1.6.0)
+  ntp (1.6.4)
+  yum (3.2.2)
