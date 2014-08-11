@@ -1,0 +1,9 @@
+Base cookbook
+
+--- Nginx Cookbook
+  --- Able to compile from source specifying different actions when calling the recipe
+  --- recipe['nginx::rails'], etc.
+--- HAProxy cookbook
+-- Create Beaver configuration for the beaver agent
+---- Identify differences between logs in CentOS / Ubuntu / Debian
+----- Create a new cookbook to install the ELK suite
