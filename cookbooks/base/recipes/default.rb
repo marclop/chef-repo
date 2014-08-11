@@ -21,7 +21,7 @@
 ## Enable the NTP service
 include_recipe "ntp"
 
-## Load the timezone item from the "misc" data bag
+## Load the node.json item from the "misc" data bag, the entire json will be loaded
 timezone = data_bag_item('misc', 'node')
 
 ## Create a symbolic link pointing to the actual timezone
@@ -56,4 +56,4 @@ end
 ## Call logrotate with defaults
 include_recipe "logrotate::global"
 
-# 
+# Beaver agent for logs
