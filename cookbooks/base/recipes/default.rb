@@ -55,5 +55,3 @@ end
 # LOGROTATE
 ## Call logrotate with defaults
 include_recipe "logrotate::global"
-
-# Beaver agent for logs

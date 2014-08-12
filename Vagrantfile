@@ -27,6 +27,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   end
 
+  chef = nil
+
   config.vm.define "centos" do |centos|
     centos.vm.box = "opscode-centos-6.5"
     centos.vm.box_url = centos_url
